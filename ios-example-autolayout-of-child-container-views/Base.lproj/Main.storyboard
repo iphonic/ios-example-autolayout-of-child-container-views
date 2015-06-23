@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZ4-bg-0u3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Simple-->
@@ -21,6 +22,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="518" id="I8c-AN-ZeB"/>
                                     <constraint firstAttribute="height" constant="514" id="Ikv-pN-mmn"/>
+                                    <constraint firstAttribute="width" secondItem="Jho-Gv-BUe" secondAttribute="height" multiplier="300:257" id="ZeC-ol-yw1"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -69,9 +71,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="501" misplaced="YES" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-97-8hO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="501" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-97-8hO">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="514"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="tAq-97-8hO" secondAttribute="height" multiplier="300:257" id="L1u-MQ-Ftg"/>
                                     <constraint firstAttribute="height" constant="518" id="NbF-gT-xci"/>
                                 </constraints>
                                 <variation key="default">
@@ -80,7 +83,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MvT-sQ-xe2" userLabel="containerView">
+                            <containerView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" translatesAutoresizingMaskIntoConstraints="NO" id="MvT-sQ-xe2" userLabel="containerView">
                                 <rect key="frame" x="0.0" y="522" width="600" height="21"/>
                             </containerView>
                         </subviews>
